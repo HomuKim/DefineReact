@@ -1,0 +1,21 @@
+import React from 'react';
+
+const VideoModal = ({ videoId, closeVideo }) => {
+  return (
+    <div id="videoModal" className="video-modal">
+      <div className="video-modal-content">
+        <span className="close-btn" onClick={closeVideo}>
+          &times;
+        </span>
+        <iframe
+          id="youtubePlayer"
+          src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
+  );
+};
+
+export default VideoModal;

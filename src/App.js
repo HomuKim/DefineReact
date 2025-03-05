@@ -5,8 +5,8 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Trainers from './pages/Trainers';
 // import Event from './pages/Event';
-// import Facilities from './pages/Facilities';
-// import Contact from './pages/Contact';
+import Facilities from './pages/Facilities';
+ import Contact from './pages/Contact';
 
 const App = () => {
 	return (
@@ -16,8 +16,8 @@ const App = () => {
 				<Route path="/" element={<Home />} />
 				<Route path="/trainers" element={<Trainers />} />
 				{/* <Route path="/event" element={<Event />} /> */}
-				{/* <Route path="/facilities" element={<Facilities />} /> */}
-				{/* <Route path="/contact" element={<Contact />} /> */}
+				<Route path="/facilities" element={<Facilities />} />
+				 <Route path="/contact" element={<Contact />} /> 
 			</Routes>
 			<Footer />
 		</Router>

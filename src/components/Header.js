@@ -52,7 +52,7 @@ const Header = () => {
 						<a href="https://www.instagram.com/define_thebody_fitness">
 							<img src="images/logo.png" alt="Define The Body Logo" />
 						</a>
-						<a href="index.html" className="logo-text">디파인더바디 피트니스</a>
+						<a href="/" className="logo-text">디파인더바디 피트니스</a>
 					</div>
 					<button className="menu-toggle" aria-label="메뉴 열기" ref={menuToggleRef}>
 						<span></span>
@@ -61,10 +61,10 @@ const Header = () => {
 					</button>
 					<ul className="nav-links" ref={navLinksRef}>
 						<li><a href="/">홈</a></li>
-						<li><a href="intro.html">인사말</a></li>
+						<li><a href="event">이벤트</a></li>
 						<li><a href="trainers">팀원소개</a></li>
-						<li><a href="facilities.html">시설소개</a></li>
-						<li><a href="contact.html">고객지원</a></li>
+						<li><a href="facilities">시설소개</a></li>
+						<li><a href="contact">고객지원</a></li>
 					</ul>
 				</nav>
 			</header>
