@@ -1,7 +1,7 @@
 import React from 'react';
-import FacilityHero from '../components/FacilityHero';
-import FacilityGallery from '../components/FacilityGallery';
-import '../css/Facilities.css';
+import FacilityHero from '../components/features/Facilities/FacilityHero';
+import FacilityGallery from '../components/features/Facilities/FacilityGallery';
+import '../components/features/Facilities/facilities.css';
 
 const Facilities = () => {
   return (

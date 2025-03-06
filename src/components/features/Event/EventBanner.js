@@ -12,10 +12,10 @@ const EventBanner = () => {
 	useEffect(() => {
 		const importImages = async () => {
 			try {
-				const imageContext = require.context('../images/event', false, /\.(png|jpe?g|svg)$/);
+				const imageContext = require.context('../../../images/event', false, /\.(png|jpe?g|svg)$/);
 				const images = await Promise.all(
 					imageContext.keys().map(async (key) => {
-						const image = await import(`../images/event/${key.replace('./', '')}`);
+						const image = await import(`../../../images/event/${key.replace('./', '')}`);
 						return image.default;
 					})
 				);

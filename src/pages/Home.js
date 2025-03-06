@@ -1,5 +1,5 @@
 import React from 'react';
-import EventBanner from '../components/EventBanner';
+import EventBanner from '../components/features/Event/EventBanner';
 
 const Home = () => {
 	return (

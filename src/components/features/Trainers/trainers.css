@@ -32,7 +32,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url('../images/logo.png');
+	background-image: url('../../../images/logo.png');
 	background-size: 50%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -71,11 +71,8 @@ body {
 	box-shadow: 0 4px 8px var(--shadow-color);
 	cursor: pointer;
 	transition: transform 0.3s ease;
-	/* 카드 자체의 움직임을 부드럽게 */
 	line-height: 0;
-	/* 이미지 아래 여백 제거 */
 	font-size: 0;
-	/* 텍스트로 인한 여백 제거 */
 }
 
 
@@ -92,7 +89,6 @@ body {
 	height: 400px;
 	object-fit: cover;
 	display: block;
-	/* 이미지 아래 여백 제거 */
 }
 
 .trainer-image {
@@ -100,7 +96,6 @@ body {
 	height: 400px;
 	object-fit: cover;
 	transition: transform 0.3s ease;
-	/* 이미지 확대 효과를 부드럽게 */
 }
 
 .trainer-info h2 {

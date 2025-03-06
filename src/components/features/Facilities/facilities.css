@@ -13,7 +13,6 @@ body {
 	text-align: center;
 	padding: 3px 20px;
 	margin: 30px auto 30px auto;
-	/* 상 우 하 좌 마진 설정 */
 	max-width: 1160px;
 	position: relative;
 	display: flex;
@@ -22,7 +21,6 @@ body {
 	justify-content: center;
 	min-height: 280px;
 	border-radius: 20px;
-	/* 모서리를 둥글게 만듭니다 */
 }
 
 .facility-hero::before {
@@ -32,7 +30,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url('../images/logo.png');
+	background-image: url('../../../images/logo.png');
 	background-size: 50%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -79,13 +77,13 @@ body {
 	object-fit: cover;
 	opacity: 1;
 	transition: all 0.5s ease-in-out;
-	/* transform 추가로 전환 효과 개선 */
 	transform: scale(1);
 }
 
 .fade-out {
 	opacity: 0 !important;
 	transform: scale(1.05) !important;
+	transition: all 0.3s ease-in-out !important;
 }
 
 .fade-in {

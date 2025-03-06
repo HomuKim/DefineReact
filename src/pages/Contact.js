@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import ContactHero from '../components/ContactHero';
-import FAQ from '../components/FAQ';
-import ContactSection from '../components/ContactSection';
-import MapModal from '../components/MapModal';
-import ProgramInfo from '../components/ProgramInfo';
-import VideoModal from '../components/VideoModal';
-import '../css/Contact.css';
+import ContactHero from '../components/features/Contact/ContactHero';
+import FAQ from '../components/features/Contact/FAQ';
+import ContactSection from '../components/features/Contact/ContactSection';
+//import MapModal from '../components/MapModal';
+import ProgramInfo from '../components/features/Contact/ProgramInfo';
+//import VideoModal from '../components/VideoModal';
+import '../components/features/Contact/contact.css';
 
 const Contact = () => {
   const [isMapModalOpen, setIsMapModalOpen] = useState(false);

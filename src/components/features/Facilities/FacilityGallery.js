@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/Facilities.css';
+import './facilities.css';
 
 const Facilities = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,11 +19,27 @@ const Facilities = () => {
     '/images/facility/facility11.jpg',
   ];
 
+
+  useEffect(() => {
+    // 이미지가 로딩되었는지 확인하는 함수
+    const checkImageLoad = () => {
+      const img = new Image();
+      img.src = images[currentIndex];
+      img.onload = () => {
+        setIsImageLoaded(true);
+      };
+    };
+
+    // 컴포넌트가 마운트될 때와 currentIndex가 변경될 때마다 실행
+    setIsImageLoaded(false); // 이미지 로딩 상태 초기화
+    checkImageLoad();
+  }, [currentIndex, images]);
+  
   const showImage = (index) => {
     if (isAnimating) return;
     setIsAnimating(true);
     setCurrentIndex(index);
-    setTimeout(() => setIsAnimating(false), 1000);
+    setTimeout(() => setIsAnimating(false), 300);
   };
 
   const changeSlide = (direction) => {

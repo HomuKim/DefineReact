@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import TrainerCard from '../components/TrainerCard';
-import ImageModal from '../components/TrainerModal';
-import '../css/trainers.css';
+import TrainerCard from '../components/features/Trainers/TrainerCard';
+import ImageModal from '../components/features/Trainers/TrainerModal';
+import '../components/features/Trainers/trainers.css';
 
 console.log('제대로 랜더링 됨')
 
